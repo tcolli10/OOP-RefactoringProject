@@ -1,0 +1,5 @@
+1. You left-click on any grass in the world.
+2. When you left-click on the world, fish falls out of the sky and gets its respective grass block dirty, thus turning it into dirt.
+3. Whichever dude is closest to the fish should turn into a new entity, where they grab the fish and take it to the river. After the fish gets taken by the dude, the block should turn back into grass like it was before.
+4. The fish are the new entities. If it is on the grass, they make the grass dirty and they just sit there. Once it is taken to the river, the expected result is for the fish to swim around in the river.
+5. We met up in person and took turns writing code. When one of us was writing code, the other person would be giving input as well. Both of us worked on every part of the project and switched off writing code.

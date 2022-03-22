@@ -1,0 +1,55 @@
+                                                    Action
+
+executeAnimation: it used actions instance variables and Action also has access to the entity that is used.
+
+executeAction: it needed to access the action kind and it calls executeAnimation
+
+executeActivityAction: it used action.entity
+
+
+                                                    Entity
+
+transform______: accessed entity.resourceCount, entity.resourceLimit, and entity.kind
+
+moveTo_______: accessed resourceCount and position
+
+execute_____Activity: used transform method from Entity and position
+
+nextPosition______: accessed and changes entity location
+
+createdAnimationAction: called by 6 other methods in Entity
+
+createActivityAction: called only by methods in Entity
+
+adjacent: called only by methods in Entity
+
+getNumFromRange: called only by methods in Entity
+
+                                                  EventScheduler
+
+updateOnTime: uses scheduler's eventQueue
+
+                                                    ImageStore
+
+loadImages: uses imageStore images
+
+processImageLine: calls loadImages and imageStore images
+
+setAlpha: only used by other methods in ImageStore
+
+                                                    WorldModel
+
+getCurrentImage: had to keep track of whether the object was an entity or background
+
+processLine: called parse methods that were in worldModel
+
+parse______: used to create and add things that were also in worldModel class
+
+withinBounds: only used by other methods in WorldModel
+
+distanceSquared: only used in WorldModel
+
+
+
+all variables were moved to the file based off of where it was used most to reduce the amount
+of getter methods needed
